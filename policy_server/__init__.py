@@ -12,11 +12,9 @@
 # <https://www.gnu.org/licenses/agpl-3.0.html>.
 #
 
-import json
 import logging
 from synapse.module_api import NOT_SPAM, UserID
 from synapse.module_api.errors import Codes
-from twisted.web.http_headers import Headers
 from datetime import date
 
 logger = logging.getLogger(__name__)
