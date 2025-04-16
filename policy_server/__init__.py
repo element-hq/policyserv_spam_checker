@@ -91,7 +91,7 @@ class Checker:
             return NOT_SPAM
 
     async def do_redact_if_needed(self, event):
-        if self.api.is_mine(event["sender"]):
+        if self.api.is_mine(event.sender):
             logger.info("Not redacting local event because they got told no already")
             return  # nothing to do
 
@@ -105,7 +105,7 @@ class Checker:
 
         logger.info("Redacting remote event due to spam")
         self.api.delayed_background_call(1, self.api.create_and_send_event_into_room, {
-            "room_id": event["room_id"],
+            "room_id": event.room_id,
             "type": "m.room.redaction",
             "sender": self.fallback_user_id,
             "content": {
