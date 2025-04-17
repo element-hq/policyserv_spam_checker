@@ -15,10 +15,13 @@
 > This module may have performance implications for your server, even after the End of Life date above.
 
 A [Synapse](https://github.com/element-hq/synapse) spam checker module implementation for servers looking to opt in
-early to [MSC4284](https://github.com/matrix-org/matrix-spec-proposals/pull/4284). Contains some auto-redaction code
-too, for added effect.
+early to [MSC4284](https://github.com/matrix-org/matrix-spec-proposals/pull/4284).
 
-See MSC4284 for details.
+For communities which want added protection and auto-redaction, the module can also be configured to redact messages
+which fail the policy server checks.
+
+See the [matrix.org blog](https://matrix.org/blog/2025/04/introducing-policy-servers/) or
+[MSC4284](https://github.com/matrix-org/matrix-spec-proposals/pull/4284) for more details.
 
 ## Installing
 
@@ -34,6 +37,9 @@ Then add the following to your `homeserver.yaml`:
 modules:
   - module: "policy_server.Checker"
     config:
+      # Note: the module does all of its work in the background. The following configuration is
+      # only needed for communities which *additionally* want auto-redaction.
+
       # If set, the user ID to issue redactions as in the room IDs listed below.
       fallback_user_id: "@abuse:matrix.org"
       # If the fallback_user_id is set above, these are the rooms where redactions will be sent
