@@ -5,7 +5,7 @@
 > notice. **Use at your own risk** (but let us know if there's bugs).
 
 > [!CAUTION]
-> This module automatically disables itself on May 21st, 2025. You should uninstall (or upgrade) it before then.
+> This module automatically disables itself on June 18th, 2025. You should uninstall (or upgrade) it before then.
 > Check the latest releases for changes to this date.
 
 > [!IMPORTANT]
@@ -54,5 +54,5 @@ Synapse will need to be restarted to apply the changes. To modify the config, up
 ## End of life
 
 This module is expected to be incorporated into Synapse itself in short time, and will currently do a whole lot of nothing
-on May 21st, 2025. New releases of the module may extend this date - check back often, and disable/uninstall the module if
+on June 18th, 2025. New releases of the module may extend this date - check back often, and disable/uninstall the module if
 the end of life date has passed.
