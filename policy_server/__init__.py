@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 
 SPAM = Codes.FORBIDDEN
 
-DISABLE_DATE = date(2025, 5, 21)  # May 21st, 2025
+DISABLE_DATE = date(2025, 6, 18)  # June 18th, 2025
 
 class Checker:
     @staticmethod
