@@ -57,5 +57,4 @@ Synapse will need to be restarted to apply the changes. To modify the config, up
 ## End of life
 
 This module is expected to be incorporated into Synapse itself in short time, and will currently do a whole lot of nothing
-on June 18th, 2025. New releases of the module may extend this date - check back often, and disable/uninstall the module if
-the end of life date has passed.
+on June 18th, 2025. Please disable/uninstall the module if the end of life date has passed.
