@@ -5,14 +5,17 @@
 > notice. **Use at your own risk** (but let us know if there's bugs).
 
 > [!CAUTION]
-> This module automatically disables itself on June 18th, 2025. You should uninstall (or upgrade) it before then.
-> Check the latest releases for changes to this date.
-
-> [!IMPORTANT]
-> Check for updates often as this module may change behaviour, or have its End of Life date above extended.
+> This module automatically disables itself on June 18th, 2025. You should uninstall it when upgrading to Synapse
+> [v.131.0](https://github.com/element-hq/synapse/releases/tag/v1.131.0) or higher.
 
 > [!WARNING]
 > This module may have performance implications for your server, even after the End of Life date above.
+
+> [!NOTE]
+> This module is now largely replaced by the functionality in Synapse [v1.131.0](https://github.com/element-hq/synapse/releases/tag/v1.131.0).
+> Users looking for autoredaction may need other tooling if not supported by their policy server.
+
+----
 
 A [Synapse](https://github.com/element-hq/synapse) spam checker module implementation for servers looking to opt in
 early to [MSC4284](https://github.com/matrix-org/matrix-spec-proposals/pull/4284).
